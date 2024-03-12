@@ -19,20 +19,5 @@ public class CategorieRestController {
 
 
 
-    @GetMapping("message")
-    public String getMessage(){
-        return "Message";
-    }
-    @GetMapping("test")
-    public String getTest(){
-        return "Test";
-    }
-    @GetMapping("getAll")
-    public List<Categorie> getAllCategories(){
-        return categorieRepository.findAll();
-    }
-    @GetMapping("/{idCat}")
-    public Categorie getOneCategorie(@PathVariable("idCat") Long id){
-        return categorieRepository.findById(id).get();
-    }
+
 }

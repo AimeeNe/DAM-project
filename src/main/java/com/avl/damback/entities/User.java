@@ -4,6 +4,11 @@ import jakarta.persistence.* ;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+import org.springframework.data.annotation.CreatedDate;
+
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -15,18 +20,19 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "c_name")
-    private String name;
-    @Column(name = "c_role")
-    private String role;
-    @Column(name = "email_id")
-    private String emailId;
+    private String username;
+    private String password;
+    private String email;
+    @Enumerated(EnumType.STRING)
+    private Role role;
+    private boolean active;
+    @CreationTimestamp
+    private LocalDateTime createdAt;
+    @UpdateTimestamp
+    private LocalDateTime updatedAt;
+    private String createdBy;
+    private String updatedBy;
+    private LocalDateTime lastLogin;
+    private LocalDateTime lastLogout;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
-    }
 }

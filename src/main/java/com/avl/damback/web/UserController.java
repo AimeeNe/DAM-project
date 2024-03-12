@@ -19,20 +19,5 @@ public class UserController {
     private UserRepository userRepository;
 
 
-    @GetMapping("message")
-    public String getMessage(){
-        return "Message";
-    }
-    @GetMapping("test")
-    public String getTest(){
-        return "Test";
-    }
-    @GetMapping("getAll")
-    public List<User> getAllUser(){
-        return userRepository.findAll();
-    }
-    @GetMapping("/{idCat}")
-    public User getOneUser(@PathVariable("idCat") Long id){
-        return userRepository.findById(id).get();
-    }
+
 }
