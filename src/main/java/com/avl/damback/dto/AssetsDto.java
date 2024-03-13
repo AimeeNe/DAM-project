@@ -1,6 +1,7 @@
 package com.avl.damback.dto;
 
 import lombok.Value;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -19,4 +20,5 @@ public class AssetsDto implements Serializable {
     String fileUrl;
     String fileExtension;
     String categorieName;
+    MultipartFile fileToUpload;
 }

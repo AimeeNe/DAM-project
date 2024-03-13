@@ -1,4 +1,4 @@
-package com.ynov.commerce.service.auth;
+package com.avl.damback.services.auth;
 
 import org.springframework.security.core.userdetails.UserDetails;
 

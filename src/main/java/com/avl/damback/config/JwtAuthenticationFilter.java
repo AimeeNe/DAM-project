@@ -1,7 +1,7 @@
-package com.ynov.commerce.config.security.filters;
+package com.avl.damback.config;
 
-import com.ynov.commerce.service.auth.AccountService;
-import com.ynov.commerce.service.auth.JwtService;
+import com.avl.damback.services.auth.AccountService;
+import com.avl.damback.services.auth.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

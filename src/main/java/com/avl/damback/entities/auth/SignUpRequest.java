@@ -1,4 +1,4 @@
-package com.ynov.commerce.entities.auth;
+package com.avl.damback.entities.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

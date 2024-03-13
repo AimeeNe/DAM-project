@@ -1,4 +1,4 @@
-package com.ynov.commerce.service.auth;
+package com.avl.damback.services.auth;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

@@ -1,4 +1,4 @@
-package com.ynov.commerce.entities.auth;
+package com.avl.damback.entities.auth;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class LoginRequest {
 	@NotBlank
-	private String email;
+	private String username;
 
 	@NotBlank
 	private String password;

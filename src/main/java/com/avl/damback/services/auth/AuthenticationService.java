@@ -1,8 +1,9 @@
-package com.ynov.commerce.service.auth;
+package com.avl.damback.services.auth;
 
-import com.ynov.commerce.entities.auth.JwtAuthenticationResponse;
-import com.ynov.commerce.entities.auth.LoginRequest;
-import com.ynov.commerce.entities.auth.SignUpRequest;
+
+import com.avl.damback.entities.auth.JwtAuthenticationResponse;
+import com.avl.damback.entities.auth.LoginRequest;
+import com.avl.damback.entities.auth.SignUpRequest;
 
 public interface AuthenticationService {
 

@@ -1,17 +1,17 @@
-package com.ynov.commerce.web.auth;
+package com.avl.damback.web.auth;
 
-import com.ynov.commerce.entities.auth.JwtAuthenticationResponse;
-import com.ynov.commerce.entities.auth.LoginRequest;
-import com.ynov.commerce.entities.auth.SignUpRequest;
-import com.ynov.commerce.service.auth.AuthenticationService;
+import com.avl.damback.entities.auth.JwtAuthenticationResponse;
+import com.avl.damback.entities.auth.LoginRequest;
+import com.avl.damback.entities.auth.SignUpRequest;
+import com.avl.damback.services.auth.AuthenticationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("commerce/v1/auth")
+@RequestMapping("dam/v1/auth")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin("*")
 public class AuthenticationController {
     private final AuthenticationService authenticationService;
 
